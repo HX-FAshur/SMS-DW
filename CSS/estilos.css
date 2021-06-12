@@ -1,0 +1,138 @@
+
+body{
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*align-content: center;*/
+}
+header{
+    margin: 10px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+nav{
+    padding: 10px;
+    display: flex;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+li a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: auto;
+
+}
+
+main{
+    margin:10px;
+    padding: 5px 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagen{
+    text-align: center;
+}
+
+.texto, #formulario {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: 90%;
+    margin:10px 0px 15px 0px;
+    text-align: justify;
+}
+
+#p1 {
+    margin-top: auto;
+    position:relative;
+}
+
+#tablaProyectos {
+    display: grid;
+    width: 90%;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+    grid-template-areas: "nombrePro ubicacionPro estadoPro entregaPro"
+                         "nomP1 ubP1 esP1 enP1"
+                         "nomP2 ubP2 esP2 enP2"
+                         "nomP3 ubP3 esP3 enP3";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+    justify-content: center;
+    align-content: center;
+    column-gap: 5px;
+}
+
+.data{
+margin: 2px;
+border-bottom: 1px dotted black;
+border-right: 1px dotted black;
+padding: 5px 0;
+text-align: justify;
+}
+
+.th{
+    margin: 2px;
+    border-bottom: 1px dotted black;
+    border-right: 1px dotted black;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: justify;
+    }
+
+    /*CONSULTA: Por que ubicando únicamente los primeros elementos dentro de grid-areas correspondientes, 
+los demás quedan automáticamente ubicados?*/
+
+#galeria{
+    display: grid;
+    width:90%;
+    min-width: 100px;
+    background-color: lightgoldenrodyellow;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-content: center;
+    justify-content: center;
+}
+
+#caja1, #caja4, #caja7{
+    background-color: lightblue;
+    font-size: 3em;
+}
+#caja2,#caja5,#caja8{
+    background-color: lightcoral;
+    font-size: 3em;
+}
+#caja3,#caja6,#caja9{
+    background-color: lightgreen ;
+    font-size: 3em;
+}
+#caja2:hover{
+    transform: scale(1,4);
+}
+
+footer {
+    display: flex;
+    margin-top: 15px;
+    bottom: 0;
+    left: 50%;
+    align-items: center;
+    padding: 2px;
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    }
+
