@@ -33,6 +33,7 @@ li a{
 main{
     margin:10px;
     padding: 5px 5px;
+    min-height: 400px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +42,12 @@ main{
 
 #imagen{
     text-align: center;
+    width: 60%;
+}
+#imagen:hover{
+    text-align: center;
+    transform: scale(1.1,1.1);
+    animation-duration: 100ms;
 }
 
 .texto, #formulario {
@@ -105,20 +112,23 @@ los demás quedan automáticamente ubicados?*/
     justify-content: center;
 }
 
+.cajas{
+    font-size: 3em;
+    height:10rem;
+}
+
 #caja1, #caja4, #caja7{
     background-color: lightblue;
-    font-size: 3em;
 }
 #caja2,#caja5,#caja8{
     background-color: lightcoral;
-    font-size: 3em;
+
 }
 #caja3,#caja6,#caja9{
     background-color: lightgreen ;
-    font-size: 3em;
 }
-#caja2:hover{
-    transform: scale(1,3);
+.cajas:hover{
+    transform: scale(1.3);
 }
 
 footer {
