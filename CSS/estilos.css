@@ -17,13 +17,16 @@ h1{
     text-align: center;
     margin: auto;
 }
-
-nav{
-    padding: 10px;
-    display: flex;
-    height: 20px;
-    margin-bottom: 10px;
+.carousel-item{
+    height:30rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
 }
+/*nav{
+    padding: 10px;
+    height: 25px;
+}*/
 
 li a{
     font-family: 'Raleway', sans-serif;
@@ -32,20 +35,20 @@ li a{
 
 }
 
-main{
-    margin:10px;
-    padding: 5px 5px;
-    height: 400px;
+/*main{
+    margin:15px;
+    min-height: 300px;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+}*/
 
-#imagen{
-    text-align: center;
+/*#imagen{
     width: 60%;
-}
+    margin: 10px;
+}*/
+
 #imagen:hover{
     text-align: center;
     transform: scale(1.1,1.1);
@@ -103,11 +106,10 @@ los demás quedan automáticamente ubicados?*/
 
 #galeria{
     display: grid;
-    width:90%;
     min-width: 100px;
     background-color: lightgoldenrodyellow;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     align-content: center;
@@ -116,8 +118,8 @@ los demás quedan automáticamente ubicados?*/
 
 .cajas{
     font-size: 3em;
-    height:10rem;
-    /*width:200px;*/
+    height:30%vh;
+    width:30%vw;
 }
 
 #caja1, #caja4, #caja7{
@@ -139,7 +141,7 @@ footer {
     margin-top: 10px;
     bottom: 0;
     left: 50%;
-    height:20%
+    height:20%;
     align-items: center;
     padding: 2px;
 }
