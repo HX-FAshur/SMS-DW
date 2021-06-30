@@ -1,6 +1,5 @@
 
 body{
-    margin: 0;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -8,7 +7,9 @@ body{
 }
 
 header{
-    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h1{
@@ -17,16 +18,17 @@ h1{
     text-align: center;
     margin: auto;
 }
+
 .carousel-item{
-    height:30rem;
+    height:20rem;
     position: relative;
     background-position: center;
     background-size: cover;
 }
-/*nav{
-    padding: 10px;
-    height: 25px;
-}*/
+
+nav{
+    height: 1.5rem;
+}
 
 li a{
     font-family: 'Raleway', sans-serif;
@@ -35,25 +37,23 @@ li a{
 
 }
 
-/*main{
-    margin:15px;
-    min-height: 300px;
+main{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}*/
+}
 
 /*#imagen{
     width: 60%;
     margin: 10px;
 }*/
 
-#imagen:hover{
+/*#imagen:hover{
     text-align: center;
     transform: scale(1.1,1.1);
     animation-duration: 100ms;
-}
+}*/
 
 .texto, #formulario {
     font-family: 'Raleway', sans-serif;
@@ -63,10 +63,10 @@ li a{
     text-align: justify;
 }
 
-#p1 {
+/*#p1 {
     margin-top: auto;
     position:relative;
-}
+}*/
 
 #tablaProyectos {
     display: grid;
