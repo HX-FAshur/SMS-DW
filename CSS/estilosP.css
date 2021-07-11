@@ -1,0 +1,161 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.carousel-item{
+    height:20rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.headlines_carousel{
+    position: absolute;
+    bottom:40%;
+    right: 40%;
+    color:white;
+    opacity: 40%;
+}
+
+nav{
+    height: 1.5rem;
+}
+
+li a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: auto;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:400px;
+}
+
+/*#imagen{
+    width: 60%;
+    margin: 10px;
+}*/
+
+/*#imagen:hover{
+    text-align: center;
+    transform: scale(1.1,1.1);
+    animation-duration: 100ms;
+}*/
+
+.texto, #formulario {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    width: 90%;
+    margin:10px 0px 15px 0px;
+    text-align: justify;
+}
+
+/*#p1 {
+    margin-top: auto;
+    position:relative;
+}*/
+
+#tablaProyectos {
+    display: grid;
+    width: 90%;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+    grid-template-areas: "nombrePro ubicacionPro estadoPro entregaPro"
+                         "nomP1 ubP1 esP1 enP1"
+                         "nomP2 ubP2 esP2 enP2"
+                         "nomP3 ubP3 esP3 enP3";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+    justify-content: center;
+    align-content: center;
+    column-gap: 5px;
+}
+
+.data{
+margin: 2px;
+border-bottom: 1px dotted black;
+border-right: 1px dotted black;
+padding: 5px 0;
+text-align: justify;
+}
+
+.th{
+    margin: 2px;
+    border-bottom: 1px dotted black;
+    border-right: 1px dotted black;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: justify;
+    }
+
+    /*CONSULTA: Por que ubicando únicamente los primeros elementos dentro de grid-areas correspondientes, 
+los demás quedan automáticamente ubicados?*/
+
+#galeria{
+    display: grid;
+    min-width: 100px;
+    background-color: lightgoldenrodyellow;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-content: center;
+    justify-content: center;
+}
+
+.cajas{
+    font-size: 3em;
+    height:30%vh;
+    width:30%vw;
+}
+
+#caja1, #caja4, #caja7{
+    background-color: lightblue;
+}
+#caja2,#caja5,#caja8{
+    background-color: lightcoral;
+
+}
+#caja3,#caja6,#caja9{
+    background-color: lightgreen ;
+}
+.cajas:hover{
+    transform: scale(1.3);
+}
+
+footer {
+    display: flex;
+    margin-top: 10px;
+    bottom: 0;
+    left: 50%;
+    height:20%;
+    align-items: center;
+    padding: 2px;
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    }
