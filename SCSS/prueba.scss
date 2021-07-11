@@ -1,0 +1,60 @@
+@mixin texto ($color) {
+    font-family: 'Raleway', sans-serif;
+    color: $color;
+}
+
+@mixin links{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: auto;
+}
+
+@mixin flex {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body{
+    @include flex;
+    height: 100vh;
+
+   .texto{
+        @include texto(black);
+    }
+
+    header{
+        @include flex;
+
+        h1{
+            @include texto(black)
+            text-align: center;
+            margin: auto;
+        }
+
+        li{
+            a{
+                @include links;
+            }
+        }
+    }
+
+    #carouselExampleControls{
+        .carousel-item{
+            height:20rem;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+
+            .headlines_carousel{
+                position: absolute;
+                bottom:40%;
+                right: 40%;
+                color:white;
+                opacity: 40%;
+            }
+        }
+    }
+
+
+}
