@@ -15,7 +15,7 @@
     <header>
         <h1 class="animate__animated animate__headShake">SMS Arquitectura</h1>
         <br>
-        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <nav class="navbar navbar-expand bg-light justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Portfolio</a></li>
@@ -27,8 +27,9 @@
     </header>
     
     <main>
-        <form action="" method="POST" id="formulario">
-            <fieldset >
+        <div class="container" id="Contacto">
+            <form action="" method="POST" id="formulario">
+            <fieldset>
                 <legend>Datos</legend>
                 <label for="NombreUsuario">Ingrese su nombre y apellido:</label>
                 <input type="text" id="NombreUsuario" placeholder="Nombre y Apellido">
@@ -54,12 +55,15 @@
                 <!-- La idea sería que al habilitar esta opcion, se habilite un input de text-area-->
 
             </fieldset>
-    
             <br>
-            <input type="button" value="Enviar formulario">
-            <input type="reset" value="Resetear formulario">
+            <div id="botones" class="container">
+                <input type="button" value="Enviar formulario">
+                <input type="reset" value="Resetear formulario">
+            </div>
 
-        </form>
+
+            </form>
+        </div>
         <br>
     </main>
 

@@ -24,11 +24,6 @@
 body{
     @include flex(column);
     height: 100vh;
-
-   .texto{
-        @include texto(black);
-    }
-
     header{
         @include flex(column);
 
@@ -55,6 +50,10 @@ body{
         justify-content: center;
         height:400px;
 
+        .texto{
+            @include texto(black);
+        }
+
         #carouselExampleControls{
             .carousel-item{
                 height:20rem;
@@ -72,11 +71,24 @@ body{
             }
         }
 
-        .texto, #formulario {
+        .texto{
             @include texto(black);
             width: 90%;
             margin:10px 0px 15px 0px;
             text-align: justify;
+        }
+        #Contacto{            
+            #formulario{
+            @include texto(black);
+            @include flex(column);
+            height:60vh;
+            justify-content: space-between;
+            text-align: justify;
+            margin:10px 0px 15px 0px;
+            legend{
+                font-weight:590;
+            }
+            }
         }
 
         #tablaProyectos {

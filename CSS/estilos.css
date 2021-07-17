@@ -3,9 +3,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   height: 100vh; }
-  body .texto {
-    font-family: 'Raleway', sans-serif;
-    color: black; }
   body header {
     display: flex;
     flex-direction: column;
@@ -29,6 +26,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 400px; }
+    body main .texto {
+      font-family: 'Raleway', sans-serif;
+      color: black; }
     body main #carouselExampleControls .carousel-item {
       height: 20rem;
       position: relative;
@@ -40,12 +40,24 @@ body {
         left: 10%;
         color: white;
         opacity: 75%; }
-    body main .texto, body main #formulario {
+    body main .texto {
       font-family: 'Raleway', sans-serif;
       color: black;
       width: 90%;
       margin: 10px 0px 15px 0px;
       text-align: justify; }
+    body main #Contacto #formulario {
+      font-family: 'Raleway', sans-serif;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 60vh;
+      justify-content: space-between;
+      text-align: justify;
+      margin: 10px 0px 15px 0px; }
+      body main #Contacto #formulario legend {
+        font-weight: 590; }
     body main #tablaProyectos {
       font-family: 'Raleway', sans-serif;
       color: black;
