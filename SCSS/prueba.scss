@@ -175,10 +175,11 @@ body{
         #redes{
             @include flex(row);
             justify-content: space-between;
-            list-style-type: none;
+            
             li {
                 display: inline-block;
                 text-decoration: none;
+                list-style-type: none;
                 }
         }
 
