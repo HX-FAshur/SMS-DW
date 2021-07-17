@@ -9,14 +9,20 @@
     margin: auto;
 }
 
-@mixin flex {
+@mixin flex($direction) {
     display:flex;
-    flex-direction: column;
+    flex-direction: $direction;
     justify-content: space-around;
 }
 
+@mixin cajas{
+    font-size: 3em;
+    height:30%vh;
+    width:30%vw;
+}
+
 body{
-    @include flex;
+    @include flex(column);
     height: 100vh;
 
    .texto{
@@ -24,37 +30,157 @@ body{
     }
 
     header{
-        @include flex;
+        @include flex(column);
 
         h1{
-            @include texto(black)
+            @include texto(black);
             text-align: center;
             margin: auto;
         }
-
-        li{
-            a{
-                @include links;
+        nav{
+            height: 1.5rem;
+            margin-top: 1rem;
+            li{
+                a{
+                    @include links;
+                }
             }
+        }
+
+    }
+
+    main{
+        @include flex(column);
+        align-items: center;
+        justify-content: center;
+        height:400px;
+
+        #carouselExampleControls{
+            .carousel-item{
+                height:20rem;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+    
+                .headlines_carousel{
+                    position: absolute;
+                    bottom:0;
+                    left: 10%;
+                    color:white;
+                    opacity: 75%;
+                }
+            }
+        }
+
+        .texto, #formulario {
+            @include texto(black);
+            width: 90%;
+            margin:10px 0px 15px 0px;
+            text-align: justify;
+        }
+
+        #tablaProyectos {
+            @include texto(black);
+            display: grid;
+            width: 90%;
+            margin: 10px;
+            grid-template-areas: "nombrePro ubicacionPro estadoPro entregaPro"
+                                 "P1 P1 P1 P1"
+                                 "P2 P2 P2 P2"
+                                 "P3 P3 P3 P3";
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,auto);
+            justify-content: center;
+            align-content: center;
+            column-gap: 5px;
+
+            #proyecto{
+                grid-area: 1 / 1;
+            }
+            #ubicacion{
+                grid-area: 1 / 2;
+            }
+
+            #nomP1{
+                grid-area: 2 / 1 ;
+            }
+            #ubP1{
+                grid-area: 2 / 2;
+            }
+
+            #esP1{
+                grid-area: 2 / 3;
+            }
+            #enP1{
+                grid-area: 2 / 4;
+            }
+
+            .data{
+                margin: 2px;
+                border-bottom: 1px dotted black;
+                border-right: 1px dotted black;
+                padding: 5px 0;
+                text-align: justify;
+                li{
+                    list-style-type: none;
+                }
+                }
+                
+            .th{
+                margin: 2px;
+                border-bottom: 1px dotted black;
+                border-right: 1px dotted black;
+                font-weight: bold;
+                padding: 5px 0;
+                text-align: justify;
+                }
         }
     }
 
-    #carouselExampleControls{
-        .carousel-item{
-            height:20rem;
-            position: relative;
-            background-position: center;
-            background-size: cover;
-
-            .headlines_carousel{
-                position: absolute;
-                bottom:40%;
-                right: 40%;
-                color:white;
-                opacity: 40%;
-            }
+    #galeria{
+        display: grid;
+        min-width: 100px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-content: center;
+        justify-content: center;
+        
+        .cajas:hover{
+            transform: scale(1.3);
         }
+
+        #caja1, #caja4, #caja7{
+            background-color: lightblue;
+            @include cajas; 
+        }
+        #caja2,#caja5,#caja8{
+            background-color: lightcoral;
+            @include cajas;        
+        }
+        #caja3,#caja6,#caja9{
+            background-color: lightgreen ;
+            @include cajas;
+        }
+
     }
+    
+    footer {
+        @include flex(row);
+        margin-top: 10px;
+        bottom: 0;
+        height:15%;
+        padding: 2px;
+        #redes{
+            @include flex(row);
+            justify-content: space-between;
+            list-style-type: none;
+            li {
+                display: inline-block;
+                text-decoration: none;
+                }
+        }
 
-
+    }
 }

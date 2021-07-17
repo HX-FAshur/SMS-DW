@@ -15,18 +15,116 @@ body {
       color: black;
       text-align: center;
       margin: auto; }
-    body header li a {
+    body header nav {
+      height: 1.5rem;
+      margin-top: 1rem; }
+      body header nav li a {
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        margin: auto; }
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    height: 400px; }
+    body main #carouselExampleControls .carousel-item {
+      height: 20rem;
+      position: relative;
+      background-position: center;
+      background-size: cover; }
+      body main #carouselExampleControls .carousel-item .headlines_carousel {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        color: white;
+        opacity: 75%; }
+    body main .texto, body main #formulario {
       font-family: 'Raleway', sans-serif;
-      text-decoration: none;
-      margin: auto; }
-  body #carouselExampleControls .carousel-item {
-    height: 20rem;
-    position: relative;
-    background-position: center;
-    background-size: cover; }
-    body #carouselExampleControls .carousel-item .headlines_carousel {
-      position: absolute;
-      bottom: 40%;
-      right: 40%;
-      color: white;
-      opacity: 40%; }
+      color: black;
+      width: 90%;
+      margin: 10px 0px 15px 0px;
+      text-align: justify; }
+    body main #tablaProyectos {
+      font-family: 'Raleway', sans-serif;
+      color: black;
+      display: grid;
+      width: 90%;
+      margin: 10px;
+      grid-template-areas: "nombrePro ubicacionPro estadoPro entregaPro" "P1 P1 P1 P1" "P2 P2 P2 P2" "P3 P3 P3 P3";
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+      align-content: center;
+      column-gap: 5px; }
+      body main #tablaProyectos #proyecto {
+        grid-area: 1 / 1; }
+      body main #tablaProyectos #ubicacion {
+        grid-area: 1 / 2; }
+      body main #tablaProyectos #nomP1 {
+        grid-area: 2 / 1; }
+      body main #tablaProyectos #ubP1 {
+        grid-area: 2 / 2; }
+      body main #tablaProyectos #esP1 {
+        grid-area: 2 / 3; }
+      body main #tablaProyectos #enP1 {
+        grid-area: 2 / 4; }
+      body main #tablaProyectos .data {
+        margin: 2px;
+        border-bottom: 1px dotted black;
+        border-right: 1px dotted black;
+        padding: 5px 0;
+        text-align: justify; }
+        body main #tablaProyectos .data li {
+          list-style-type: none; }
+      body main #tablaProyectos .th {
+        margin: 2px;
+        border-bottom: 1px dotted black;
+        border-right: 1px dotted black;
+        font-weight: bold;
+        padding: 5px 0;
+        text-align: justify; }
+  body #galeria {
+    display: grid;
+    min-width: 100px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    justify-content: center; }
+    body #galeria .cajas:hover {
+      transform: scale(1.3); }
+    body #galeria #caja1, body #galeria #caja4, body #galeria #caja7 {
+      background-color: lightblue;
+      font-size: 3em;
+      height: 30%vh;
+      width: 30%vw; }
+    body #galeria #caja2, body #galeria #caja5, body #galeria #caja8 {
+      background-color: lightcoral;
+      font-size: 3em;
+      height: 30%vh;
+      width: 30%vw; }
+    body #galeria #caja3, body #galeria #caja6, body #galeria #caja9 {
+      background-color: lightgreen;
+      font-size: 3em;
+      height: 30%vh;
+      width: 30%vw; }
+  body footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    bottom: 0;
+    height: 15%;
+    padding: 2px; }
+    body footer #redes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      justify-content: space-between;
+      list-style-type: none; }
+      body footer #redes li {
+        display: inline-block;
+        text-decoration: none; }
