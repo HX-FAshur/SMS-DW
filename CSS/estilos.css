@@ -123,8 +123,8 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      justify-content: space-between;
-      list-style-type: none; }
+      justify-content: space-between; }
       body footer #redes li {
         display: inline-block;
-        text-decoration: none; }
+        text-decoration: none;
+        list-style-type: none; }
