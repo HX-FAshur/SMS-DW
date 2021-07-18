@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 400px; }
+  min-height: 100%; }
   body header {
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
     justify-content: space-around;
     align-items: center;
     justify-content: center;
-    min-height: 100%; }
+    min-height: 400px; }
     body main .texto {
       font-family: 'Raleway', sans-serif;
       color: black; }
