@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh; }
+  min-height: 400px; }
   body header {
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
     justify-content: space-around;
     align-items: center;
     justify-content: center;
-    height: 400px; }
+    min-height: 100%; }
     body main .texto {
       font-family: 'Raleway', sans-serif;
       color: black; }
@@ -40,12 +40,18 @@ body {
         left: 10%;
         color: white;
         opacity: 75%; }
-    body main .texto {
-      font-family: 'Raleway', sans-serif;
-      color: black;
-      width: 90%;
-      margin: 10px 0px 15px 0px;
-      text-align: justify; }
+    body main #Pre {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative; }
+      body main #Pre .texto {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        /*width: fit-content;*/
+        height: 60%;
+        margin: 10px 0px 15px 0px;
+        text-align: center; }
     body main #Contacto #formulario {
       font-family: 'Raleway', sans-serif;
       color: black;
@@ -63,13 +69,13 @@ body {
       color: black;
       display: grid;
       width: 90%;
-      margin: 10px;
+      margin: 5px;
       grid-template-areas: "nombrePro ubicacionPro estadoPro entregaPro" "P1 P1 P1 P1" "P2 P2 P2 P2" "P3 P3 P3 P3";
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, auto);
       justify-content: center;
       align-content: center;
-      column-gap: 5px; }
+      column-gap: 3px; }
       body main #tablaProyectos #proyecto {
         grid-area: 1 / 1; }
       body main #tablaProyectos #ubicacion {
